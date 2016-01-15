@@ -58,7 +58,7 @@ public class ScheduledLocationService: NSObject, CLLocationManagerDelegate {
         locationManager.activityType = .AutomotiveNavigation
         locationManager.pausesLocationUpdatesAutomatically = false
         
-        if NSProcessInfo().isOperatingSystemAtLeastVersion(NSOperatingSystemVersion(majorVersion: 9, minorVersion: 0, patchVersion: 0)) {
+        if #available(iOS 9.0, *) {
             locationManager.allowsBackgroundLocationUpdates = true
         }
         
