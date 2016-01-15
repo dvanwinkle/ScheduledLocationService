@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ScheduledLocationService"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "A swift based Core Location wrapper that can be scheduled to run at an interval."
 
   # This description is used to generate tags and improve search results.
