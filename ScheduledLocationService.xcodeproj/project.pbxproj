@@ -10,6 +10,7 @@
 		CE2AE3161C469FDC003FF987 /* ScheduledLocationService.h in Headers */ = {isa = PBXBuildFile; fileRef = CE2AE3151C469FDC003FF987 /* ScheduledLocationService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE2AE31D1C469FDC003FF987 /* ScheduledLocationService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2AE3121C469FDC003FF987 /* ScheduledLocationService.framework */; };
 		CE2AE3221C469FDC003FF987 /* ScheduledLocationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2AE3211C469FDC003FF987 /* ScheduledLocationServiceTests.swift */; };
+		CECE4CDC1C46A1BE004300B1 /* ScheduledLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE4CDB1C46A1BE004300B1 /* ScheduledLocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		CE2AE31C1C469FDC003FF987 /* ScheduledLocationServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScheduledLocationServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2AE3211C469FDC003FF987 /* ScheduledLocationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledLocationServiceTests.swift; sourceTree = "<group>"; };
 		CE2AE3231C469FDC003FF987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CECE4CDB1C46A1BE004300B1 /* ScheduledLocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduledLocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				CE2AE3151C469FDC003FF987 /* ScheduledLocationService.h */,
 				CE2AE3171C469FDC003FF987 /* Info.plist */,
+				CECE4CDB1C46A1BE004300B1 /* ScheduledLocationService.swift */,
 			);
 			path = ScheduledLocationService;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CECE4CDC1C46A1BE004300B1 /* ScheduledLocationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +312,7 @@
 		CE2AE3271C469FDC003FF987 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -318,12 +323,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.danvw.ScheduledLocationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		CE2AE3281C469FDC003FF987 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -376,6 +383,7 @@
 				CE2AE3281C469FDC003FF987 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE2AE3291C469FDC003FF987 /* Build configuration list for PBXNativeTarget "ScheduledLocationServiceTests" */ = {
 			isa = XCConfigurationList;
@@ -384,6 +392,7 @@
 				CE2AE32B1C469FDC003FF987 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
